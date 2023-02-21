@@ -16,39 +16,11 @@
           color: #00FF00;
           background-color: black;
         }
-      html, body {
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-      }
-      
-      #matrix {
-        font-family: "Courier New", Courier, monospace;
-        font-size: 2.5em;
-        color: #0f0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-      }
-
-        h1 {
-          font-size: 4rem;
-          font-weight: bold;
-        }
-
-        p {
-          font-size: 1.5rem;
-        }
     </style>
   
 </head>
 
 <body>
-  <canvas id="matrix">
-  </canvas>
   <div class="container-fluid bg-dark text-light p-5">
   <div class="row justify-content-center align-items-center">
     <div class="col-lg-6 col-md-8 col-sm-10 text-center">
@@ -58,7 +30,7 @@
     </div>
   </div>
 </div>
-
+</canvas>
   <!-- Agregamos los scripts de Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -67,46 +39,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script>
-      function createMatrix() {
-        var canvas = document.getElementById('matrix');
-        var ctx = canvas.getContext('2d');
-        const width = canvas.width = window.innerWidth;
-        const height = canvas.height = window.innerHeight;
-        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-        let columns = width / 20;
-        const drops = [];
-
-        for (let i = 0; i < columns; i++) {
-          drops[i] = height + Math.random() * 100;
-        }
-
-        function draw() {
-          context.fillStyle = 'rgba(0, 0, 0, 0.05)';
-          context.fillRect(0, 0, width, height);
-
-          context.fillStyle = '#0f0';
-          context.font = '15px arial';
-
-          for (let i = 0; i < drops.length; i++) {
-            const text = characters[Math.floor(Math.random() * characters.length)];
-            context.fillText(text, i * 20, drops[i]);
-            drops[i] -= 20;
-            
-            if (drops[i] < 0) {
-              drops[i] = height;
-            }
-          }
-        }
-
-        setInterval(draw, 35);
-      }
-
-      window.onload = function() {
-        createMatrix();
-      }
-    </script>
 </body>
 
 </html>
