@@ -1,0 +1,19 @@
+﻿COMMAND,DESCRIPTION
+cd,Displays the name of or changes the current directory.
+cls,Clears the screen.
+cmd,Starts a new instance of the Windows command interpreter.
+copy,Copies one or more files to another location.
+del,Deletes one or more files.
+dir,Displays a list of files and subdirectories in a directory.
+echo,"Displays messages, or turns command echoing on or off."
+erase,Deletes one or more files.
+exit,Quits the cmd.exe program (command interpreter).
+find,Searches for a text string in a file or files.
+findstr,Searches for strings in files.
+mkdir,Creates a directory.
+more,Displays output one screen at a time.
+move,Moves one or more files from one directory to another directory.
+ren,Renames a file or files.
+rmdir,Removes a directory.
+type,Displays the contents of a text file.
+ver,version

@@ -1,0 +1,3 @@
+# INTEGER1 is less than or equal to INTEGER 2
+
+OPERATOR: INTEGER1 -le INTEGER2

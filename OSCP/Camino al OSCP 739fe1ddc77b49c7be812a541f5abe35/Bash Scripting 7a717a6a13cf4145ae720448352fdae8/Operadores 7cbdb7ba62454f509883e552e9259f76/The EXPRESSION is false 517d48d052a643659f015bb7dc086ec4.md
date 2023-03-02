@@ -1,0 +1,3 @@
+# The EXPRESSION is false.
+
+OPERATOR: !EXPRESSION

@@ -1,0 +1,3 @@
+# STRING1 is not equal to STRING2
+
+OPERATOR: STRING1 != STRING2

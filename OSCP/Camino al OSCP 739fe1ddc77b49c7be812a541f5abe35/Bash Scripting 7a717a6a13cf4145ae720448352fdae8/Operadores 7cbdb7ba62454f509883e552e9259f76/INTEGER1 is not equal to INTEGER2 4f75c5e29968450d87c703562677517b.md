@@ -1,0 +1,3 @@
+# INTEGER1 is not equal to INTEGER2
+
+OPERATOR: INTEGER1 -ne INTEGER2

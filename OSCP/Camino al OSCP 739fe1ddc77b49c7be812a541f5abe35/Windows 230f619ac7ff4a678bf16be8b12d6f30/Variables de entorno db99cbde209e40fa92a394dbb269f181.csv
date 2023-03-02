@@ -1,0 +1,5 @@
+﻿ENVIRONMENT VARIABLE,PURPOSE
+PATH,Holds the search path for executable files
+USERNAME,Shows the currently logged on user
+TEMP,Returns the default temporary storage directory(ies)
+USERPROFILE,Holds the profile location of the current user

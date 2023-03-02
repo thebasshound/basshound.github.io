@@ -1,0 +1,3 @@
+# INTEGER1 is greater than INTEGER2
+
+OPERATOR: INTEGER1 -gt INTEGER2
